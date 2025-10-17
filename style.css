@@ -1,64 +1,82 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background: #f5f5f5;
-  }
-  
-  h1 {
-    color: #333;
-  }
-  
-  .form-container {
-    margin-bottom: 15px;
-  }
-  
-  input {
-    padding: 8px;
-    margin-right: 5px;
-  }
-  
-  button {
-    padding: 8px 12px;
-    background: #4CAF50;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: #45a049;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    background: white;
-    margin: 5px 0;
-    padding: 8px;
-    border: 1px solid #ddd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .acao {
-    margin-left: 5px;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .editar {
-    background: #2196F3;
-    color: white;
-  }
-  
-  .excluir {
-    background: #f44336;
-    color: white;
-  }
-  
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #333;
+  margin-top: 30px;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button#adicionar {
+  background-color: #28a745;
+  color: white;
+}
+
+button#adicionar:hover {
+  background-color: #218838;
+}
+
+ul#lista-tarefas {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  width: 400px;
+}
+
+ul#lista-tarefas li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+ul#lista-tarefas li span {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+ul#lista-tarefas li button {
+  margin-left: 5px;
+  background-color: #007bff;
+  color: white;
+}
+
+ul#lista-tarefas li button:hover {
+  background-color: #0056b3;
+}
+
+ul#lista-tarefas li button:nth-child(3) { 
+  background-color: #dc3545;
+}
+
+ul#lista-tarefas li button:nth-child(3):hover {
+  background-color: #c82333;
+}
